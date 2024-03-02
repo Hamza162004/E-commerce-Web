@@ -1,0 +1,79 @@
+body{
+    background-color: rebeccapurple;
+}
+
+.dropdown-content a{
+    font-size: 20px;
+}
+
+.dropdown-content img{
+    width: 40px;
+} 
+
+.page ul{
+    flex-direction: column;
+    height: 100px;
+}
+
+.page a{
+    font-size: 16px;
+    margin: 5px 5px;
+    padding: 1px;
+}
+
+#presentpage{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    color: red;
+}
+
+.tools button{
+    margin-right: 3px;
+}
+
+.update{
+    grid-template-columns: 1fr;
+}
+
+.update > div{
+    height: 130px;
+}
+
+#updateText{
+    align-items: center;
+    padding-left: 0px;
+    text-align: center;
+}
+
+#emailcontent{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand span{
+    font-size: 35px;
+}
+
+.mySlides img{
+    height: 300px;
+}
+
+.contactsection > div{
+    height: 250px;
+}
+
+.socialplatforms img{
+    width: 60px;
+}
+
+.contactsection h1{
+    font-size: 44px;
+    text-align: center;
+}
+
+.socialplatforms div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

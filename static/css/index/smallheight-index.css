@@ -1,0 +1,66 @@
+
+
+#navbar{
+    flex-direction: column-reverse;
+    border: none;
+}
+
+#logoImg{
+    width: 50px; 
+}
+
+#logoName{
+    font-size: 35px;  
+}
+
+.glider-container{
+    margin: 0px 15px;
+}
+
+.card{
+    margin: 0px 5px;
+    margin-bottom: 10px;
+}
+
+.inside-card span{
+    font-size: 30px;
+    margin-top: 200px;
+}
+
+.card-button{
+   
+    font-size: 10px;
+    margin: 3px;
+    padding: 5px;
+    border: solid 1px white;
+    border-radius: 4px;
+}
+
+.card-button:hover{
+   
+    border: black 1px solid;
+}
+.card-button:active{
+   
+    border: black 1px solid;
+}
+
+.moto-head{
+    font-size: 35px;
+    margin-bottom: 13px;
+}
+
+.moto{
+    font-size: 25px;
+}
+
+.social-images a button img{
+    width: 30px;
+}
+.social-images a{
+    margin: 0px 3px;
+}
+
+footer{
+    font-size: 13px;
+}

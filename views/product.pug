@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Huskies</title>
+
+    <link rel="stylesheet" href="/static/css/women/women.css">
+    <link rel="stylesheet" href="/static/css/women/product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="/static/img/huskies logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa&family=Orbitron&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <script src="/static/scripts/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="movingtext">
+        <p class="text">Delivery chargers are Rs. 200/- nationwide and u can enjoy free shipping for minimum order of Rs. 5000/------ Discover the TREND with HUSKIES.</p>
+    </div>
+    <nav id="navbar">
+        <div class="menu">
+            <div class="dropdown" id="dropdown" >
+               
+            </div>
+        </div>
+        <div class="page" id="page">
+           
+        </div>
+        <div class="brand">
+            <span>Huskies</span>
+        </div>
+        <div class="tools">
+            <input type="search" name="search" id="search" placeholder="Search">
+            <button id="search-btn" onclick="searchfor()"><img src="/static/img/search.png" alt="search button"></button>
+            <a href="/cart"><button id="cartbtn"><img src="/static/img/cart.png" alt="cart button"></button></a>
+            <a href="/"><button><img src="/static/img/home.png" alt="cart button"></button></a>
+        </div>
+    </nav>
+
+    <section class="page-layout">
+        <div class="sorting">
+            <span>Sort by : </span>
+            <select name="sortway" id="sortway" onchange="change()">
+                <option value="default">Default</option>
+                
+                <option value="H_to_L">Price, High to low</option>
+                
+                <option value="L_to_H">Price, Low to High</option>
+            </select>
+        </div>
+
+        <div class="layout">
+            <span>Show : </span>
+            <button onclick="display3()">3</button>
+            <button onclick="display5()">5</button>
+        </div>
+    </section>
+
+        
+    
+
+    <section class="product-container">
+        <div class="products pro3" id="products">
+
+        </div>
+    </section>
+    input(type="hidden", id="gender" value = gender)
+    <script src="/static/scripts/women.js"></script>
+    <script src="/static/scripts/product.js"></script>
+</body>
+</html>

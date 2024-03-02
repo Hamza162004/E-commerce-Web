@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout page | Huskies</title>
+    <link rel="stylesheet" href="/static/css/women/women.css">
+    <link rel="stylesheet" href="/static/css/women/checkout.css">
+    <link rel="shortcut icon" href="/static/img/huskies logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa&family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="menu">
+            <img src="/static/img/huskies logo.png" alt="">
+        </div>
+        <div class="page">
+            
+        </div>
+        <div class="brand">
+            <span>Huskies</span>
+        </div>
+        <div class="tools">
+            <!-- <input type="search" name="search" id="search" placeholder="Search">
+            <button id="search-btn" onclick="searchfor()"><img src="/static/img/search.png" alt="search button"></button> -->
+            <a href="/cart"><button><img src="/static/img/cart.png" alt="cart button"></button></a>
+            <a href="/"><button><img src="/static/img/home.png" alt="cart button"></button></a>
+        </div>
+    </nav>
+    <div class="head">
+        <h1>Enter Your Details</h1>
+    </div>
+    <section id="main-container">
+        <div id="userinfo">
+            <form  action="">
+                <div class="details">
+                    <label for="name">Name : </label>
+                    <div class="inputcontainer">
+
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                    </div>
+                </div>
+                <div class="details">
+                    <label for="">Email : </label>
+                    <div class="inputcontainer">
+
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="details">
+                    <label for="tel">Contact No : </label>
+                    <div class="inputcontainer">
+
+                        <input type="tel" name="tel" id="tel" placeholder="Enter your contact number" required>
+                    </div>
+                </div>
+                <div class="details">
+                    <label for="address">Address : </label>
+                    <div class="inputcontainer">
+
+                        <input type="text" name="address" id="address" placeholder="Enter your address" required>
+                    </div>
+                </div>
+                <div class="details">
+                    <label for="city">City : </label>
+                    <div class="citycontainer">
+                        <input type="text" name="city" id="city" placeholder="Enter your City" required>
+                    </div>
+
+                    <label for="postalcode">Postal Code : </label>
+                    <div class="citycontainer">
+                        <input type="text" name="postalcode" id="postalcode" placeholder="Enter your Postal code" required>
+                    </div>
+                </div>
+                <div class="btncontainer">
+                    <button type="button" id="submitbtn" onclick="adduserinfo()">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div id="ordercontainer">
+            <div id="orderhead">
+                <h1>Your Order</h1>
+            </div>
+            <div id="itemshead">
+                <span></span>
+                <span>Items</span>
+                <span>Quantity</span>
+            </div>
+            <div id="itemscontainer">
+                
+            </div>
+
+        </div>
+    </section>
+    <hr>
+    <section id="confirm-con">
+        <form action="/checkoutpage" method="post" id="form">
+            <button type="submit" id="confirmbtn">Place Order</button>
+        </form>
+    </section>
+    <script src="/static/scripts/checkout.js"></script>
+</body>
+</html>

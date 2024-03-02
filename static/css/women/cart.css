@@ -1,0 +1,133 @@
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+}
+
+.head h1{
+    font-size: 60px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: red;
+}
+
+.cart-container{
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Changa', sans-serif;
+    flex-direction: column;
+}
+
+.col-container{
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1fr 1fr 1fr 1fr;
+    grid-gap: 80px;
+    text-align: center;
+    border-bottom:1px solid black ;
+    margin-bottom: 20px;
+}
+
+#fake{
+    color: white;
+}
+
+.menu img{
+    width: 50px;
+}
+
+.item{
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1fr 1fr 1fr 1fr ;
+    
+    text-align: center;
+    font-size: 15px;
+    grid-gap: 47px;
+    width: 800px;
+}
+
+.image{
+    width: 40px;
+}
+
+.plus img{
+    width: 8px;
+}
+
+.minus img{
+    width: 8px;
+}
+
+.remove img{
+    width: 8px;
+}
+
+.quantity-col span{
+    padding: 2px;
+    margin: 0px 2px;
+}
+
+.items-container{
+    border-bottom: 1px solid black ;
+}
+
+.charges-container{
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 800px;
+    border-bottom: 1px solid black;
+}
+
+
+.subtotal{
+    color: red;
+}
+
+.total-container{
+    font-size: 30px;
+}
+
+.checkout-container{
+    display: flex;
+}
+
+.checkout-container button{
+    width: 150px;
+    padding: 4px;
+    border-radius: 2px;
+    font-size: 18px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0px 10px;
+}
+
+#checkout{
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    cursor: pointer;
+}
+#checkout:hover{
+    color: black;
+    background-color: white; 
+}
+#checkout:active{
+    color: white;
+    background-color: black;
+}
+
+#continue{
+    color: white;
+    background-color: red;
+    border: 2px solid red;
+}
+#continue:hover{
+    color: red;
+    background-color: white;  
+}
+#continue:active{
+    color: white;
+    background-color: red;
+}

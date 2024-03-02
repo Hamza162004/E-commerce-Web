@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | Huskies</title>
+    <link rel="stylesheet" href="/static/css/women/women.css">
+    <link rel="stylesheet" href="/static/css/women/cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="/static/img/huskies logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa&family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <script src="/static/scripts/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="menu">
+            <img src="/static/img/huskies logo.png" alt="">
+        </div>
+        <div class="page">
+            <ul>
+                <li><a href="/men">Men</a></li>
+                <li><a href="/women">Women</a></li>
+                <li><a href="/teenager">Teenageers</a></li>
+            </ul>
+        </div>
+        <div class="brand">
+            <span>Huskies</span>
+        </div>
+        <div class="tools">
+            <!-- <input type="search" name="search" id="search" placeholder="Search">
+            <button id="search-btn" onclick="searchfor()"><img src="/static/img/search.png" alt="search button"></button> -->
+            <a href="/cart"><button><img src="/static/img/cart.png" alt="cart button"></button></a>
+            <a href="/"><button><img src="/static/img/home.png" alt="cart button"></button></a>
+        </div>
+    </nav>
+    <div class="head">
+        <h1>Your cart</h1>
+    </div>
+    <section class="cart-container">
+        <div class="col-container">
+            <span id="fake">image</span>
+            <span class="colname">Item</span>
+            <span class="colname">Price</span>
+            <span class="colname">Quantity</span>
+            <span class="colname">Total</span>
+            <span class="colname">Remove</span>
+        </div>
+        <div class="items-container">
+                
+        </div>
+        <div class="charges-container" id="charges-container">
+        
+        </div>
+        <div class="checkout-container">
+            <a href="/"><button id="continue" onclick="savecart()">Continue Shopping</button></a>
+            <a href="/checkoutpage"><button id="checkout" onclick="savecart()">Proceed to Checkout</button></a>
+        </div>
+    </section>
+
+    
+    
+    
+    <script src="/static/scripts/cart.js"></script>
+</body>
+</html>

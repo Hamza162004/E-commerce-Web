@@ -1,0 +1,147 @@
+.page-layout{
+    font-family: 'Bebas Neue', sans-serif;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+    position: sticky;
+    background-color: white;
+    top: 50px;
+}
+
+#sortway{
+    background: none;
+    border: none;
+    font-size: 16px;
+    padding: 0px 4px;
+    cursor: pointer;
+    color: red;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.layout button{
+    font-family: 'Bebas Neue', sans-serif;
+    background : none;
+    border : none;
+    font-size: 17px;
+    padding: 0px 3px;
+    margin: 0px 8px;
+    color: red;
+    cursor: pointer;
+}
+
+/* products */
+
+.product-container{
+    padding: 15px 20px;
+}
+
+.products > div{
+    margin: 20px 0px;
+}
+
+/* For 3 products  */
+
+.pro3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.pro3 img{
+    width: 100%;
+}
+
+
+.p3name{
+    font-family: 'Changa', sans-serif;
+    font-size: 22px;
+    padding-left: 6px;
+}
+
+.p3belowname{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 6px;
+}
+
+.p3price{
+    font-family: 'Changa', sans-serif;
+    font-size: 18px;
+}
+
+.p3product-btn button{
+    padding: 2px 4px;
+    margin: 0px 3px;
+    font-family: 'Changa', sans-serif;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.prod3-buy{
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+}
+.prod3-buy:hover{
+    background-color: white;
+    color: red;
+}
+.prod3-buy:active{
+    background-color: red;
+    color: white;
+}
+
+.prod3-cart{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+.prod3-cart:hover{
+    background-color: white;
+    color: black;
+}
+.prod3-cart:active{
+    background-color: black;
+    color: white;
+}
+
+/* for 5 product  */
+
+.pro5{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 8px;
+}
+
+.pro5 img{
+    width: 100%;
+}
+
+.p5name{
+    font-family: 'Changa', sans-serif;
+    font-size: 14px;
+    padding-left: 3px;
+}
+
+
+.p5price{
+    font-family: 'Changa', sans-serif;
+    font-size: 14px;
+}
+
+.p5product-btn button{
+    padding: 2px 1px;
+    margin: 0px 1px;
+    font-family: 'Changa', sans-serif;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+

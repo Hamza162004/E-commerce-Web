@@ -1,0 +1,340 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* moving text above navigation bar */
+
+
+
+.movingtext{
+    position: relative;
+    overflow: hidden;
+    height: 20px;
+    color: red;
+    margin: 3px 30px ;
+    margin-bottom: 0px;
+    padding: 2px;
+}
+
+.movingtext p{
+    position: absolute;
+    font-family: 'Bebas Neue', sans-serif;
+    width: max-content;
+    animation: my-animation 20s linear infinite;
+}
+
+/* navbar */
+
+#navbar{
+    display: grid;
+    grid-template-columns: 0.2fr 0.6fr 1.4fr 0.8fr;
+    margin-bottom: -2px;
+    position: sticky;
+    top : 0px;
+    z-index: 2;
+    background: white;
+    border-bottom: black 1px solid;
+}
+
+/* dropdown menu */
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown img{
+    margin-top: 1px;
+    width: 20px;
+}
+
+.dropdown button{
+    width: 30px;
+    cursor: pointer;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown:hover .dropbtn {
+    filter: invert(1);
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+li.dropdown {
+    display: inline-block;
+  }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content span{
+    margin: 2px 0px;
+    margin-left: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* pages reference */
+
+.page ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    padding-right: 10px;
+}
+
+.page a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    padding: 2px;
+    margin: 0px 3px;
+}
+
+.page a:hover{
+    color: red;
+}
+
+#presentpage{
+    border-top: 3px solid black;
+    color: red;
+}
+
+/* brand name */
+
+.brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.brand span{
+    font-family: 'Black Ops One', cursive;
+    font-size: 40px;
+}
+
+/* Tools section  */
+
+#search{
+    margin: 0px 5px;
+}
+.tools{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.tools img{
+    width: 20px;
+}
+
+.tools button{
+    background: none;
+    border: none;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+/* slideshow  */
+
+.slidesection{
+    height:100%;
+}
+
+.slideshow-container {
+    max-width: 1300px;
+    position: relative;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.mySlides img{
+    width: 100%;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 2px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.seperate{
+    margin: 20px 3px;
+}
+
+/* view products  */
+
+
+
+.productsection{
+    background: center / cover no-repeat url(/static/img/women/girls\ group1.jpg);
+    margin: 50px 0px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.productsection button{
+    font-family: 'Balsamiq Sans', cursive;
+    padding: 15px;
+    font-size: 21px;
+    border: white solid 3px;
+    border-radius: 7px;
+    width: 170px;
+    background : none;
+    color: white;
+    font-weight: bold;
+}
+
+.productsection button:hover{
+    background-color: black;
+    border: solid black 3px;
+}
+.productsection button:active{
+    background-color: white;
+    border: solid white 3px;
+    color: black;
+}
+
+.update{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+.update > div{
+    height: 150px;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: rgb(199, 244, 244);
+}
+
+#updateText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+}
+
+#updateText h1{
+    margin: 5px;
+}
+
+#updateText span{
+    margin: 5px;
+}
+
+#emailcontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#emailcontent form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.inp{
+    padding: 4px;
+    width: 300px;
+    height: 25px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+#submitbtn{
+    padding: 4px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    background: none;
+    color: black;
+    border: 1px solid black;
+    margin: 2px;
+}
+
+#submitbtn:hover{
+    color: white;
+    background: black;
+}
+
+#submitbtn:active{
+    color: black;
+    background-color: white;
+}
+
+.contactsection{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+}
+
+.contactsection > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+.c-img{
+    width: 30px;
+}
+
+.socialplatforms img{
+    width: 80px;
+}
+
+.contactinfo p{
+    margin: 20px;
+    margin-left: none;
+    font-size: 20px;
+}
+
+.socialplatforms a{
+    text-decoration: none;
+}
+
+.contactsection h1{
+    font-size: 50px;
+}

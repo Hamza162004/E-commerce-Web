@@ -1,0 +1,19 @@
+.productsection{
+    background: center / cover no-repeat url(/static/img/men/img4.png);
+}
+
+.productsection button{
+    color: black;
+    border: 3px solid black;
+    font-weight: bold;
+}
+
+.productsection button:hover{
+    color: white;
+    background-color: black;
+}
+
+.productsection button:active{
+    color: black;
+    background-color: white;
+}
